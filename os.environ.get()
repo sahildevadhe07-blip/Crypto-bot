@@ -1,0 +1,13 @@
+import os
+# ... other imports ...
+
+# In both bot.py and alert_checker.py:
+TELEGRAM_BOT_TOKEN = os.environ.get("8273420307:AAGgIy8LHxz5DxfGmuOTLJXv4kCMv1xTu4M")
+
+# In alert_checker.py, you then pass this token to the telegram.Bot constructor:
+if TELEGRAM_BOT_TOKEN:
+    bot = Bot(token=8273420307:AAGgIy8LHxz5DxfGmuOTLJXv4kCMv1xTu4M)
+else:
+    # Handle the error if the token isn't set
+    print("8273420307:AAGgIy8LHxz5DxfGmuOTLJXv4kCMv1xTu4M environment variable not set.")
+    bot = None
