@@ -1,0 +1,13 @@
+python-telegram-bot==13.7
+requests==2.28.1
+feedparser==6.0.10
+# If you decide to use PostgreSQL:
+# psycopg2-binary    # updater.bot.set_webhook("YOUR_RENDER_EXTERNAL_URL/" + TELEGRAM_BOT_TOKEN)
+
+
+    # Run the bot until you press Ctrl-C or the process receives SIGINT,
+    # SIGTERM or SIGABRT. This should be used only with start_polling().
+    updater.idle()
+
+if __name__ == '__main__':
+    main()
